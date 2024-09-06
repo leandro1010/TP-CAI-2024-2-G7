@@ -8,14 +8,9 @@ namespace Negocio
 {
     public class LoginNegocio
     {
-        public void Login(string usuario, string password)
+        public void Login(string username, string password) 
         {
-            ValidacionesUtiles validaciones = new ValidacionesUtiles();
-            if (validaciones.validarNombreUsuario(usuario, password))
-
-            {
-
-            }
+            //aca escribo que hace el login
         }
     }
 }

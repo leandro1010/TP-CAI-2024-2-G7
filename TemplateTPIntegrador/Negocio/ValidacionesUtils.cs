@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class ValidacionesUtiles
+    public class ValidacionesUtils
     {
-        public Boolean validarNombreUsuario(string usuario, string password)
+        public bool ValidarNombreUsuario(string username)
         {
-            if (usuario.Length < 0)
+            if (username.Length < 8)
             {
                 return true;
             }
+
             return false;
         }
     }

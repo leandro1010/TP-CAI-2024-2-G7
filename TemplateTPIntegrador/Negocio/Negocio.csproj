@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ValidarcionesUtiles.cs" />
+<<<<<<< HEAD
+    <Compile Include="UTILS\LoginNegocio.cs" />
+=======
     <Compile Include="LoginNegocio.cs" />
+>>>>>>> 29e51dd603d0caacadf1a713db7f24c09547a64e
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidacionesUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">
