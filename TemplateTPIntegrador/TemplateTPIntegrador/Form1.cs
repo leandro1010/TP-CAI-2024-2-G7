@@ -1,4 +1,5 @@
-﻿using Negocio;
+﻿//using Negocio;
+using NEGOCIO.UTILS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TemplateTPIntegrador.UTILS;
 
 namespace TemplateTPIntegrador
 {
@@ -20,14 +22,21 @@ namespace TemplateTPIntegrador
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            ValidacionesYUtiles validaciones = new ValidacionesYUtiles();
+
+            if (!validaciones.ValidarStringVacio(textBox1, textBox2))
             {
-                MessageBox.Show("El campo está vacío", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                LoginNegocio = new LoginNegocio();
-              
+                LoginNegocio loginNegocio = new LoginNegocio();
+                bool resultado = loginNegocio.ValidarLogin(textBox1.Text, textBox2.Text);
+
+                if (resultado)
+                {
+                    MessageBox.Show("Login exitoso", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Login fallido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

@@ -5,32 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TemplateTPIntegrador
+namespace TemplateTPIntegrador.UTILS
 {
     public class ValidacionesYUtiles
     {
-        public Boolean ValidarStringVacio() {
-
+        public bool ValidarStringVacio(TextBox textBox1, TextBox textBox2)
+        {
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                MessageBox.Show("El campo textBox1 está vacío", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("El campo Usuario está vacío", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return true;
             }
             else if (string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                MessageBox.Show("El campo textBox2 está vacío", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return true ;
+                MessageBox.Show("El campo Contraseña está vacío", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
             }
-            else
-            {
-                // Aquí iría el código a ejecutar si ambos TextBox no están vacíos
-                return false
-            }
+            return false;
         }
-    }
     }
 }
 
 
 
-   

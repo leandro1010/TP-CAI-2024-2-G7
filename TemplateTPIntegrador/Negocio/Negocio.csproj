@@ -41,8 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ValidarcionesUtiles.cs" />
-    <Compile Include="LoginNegocio.cs" />
+    <Compile Include="UTILS\LoginNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
