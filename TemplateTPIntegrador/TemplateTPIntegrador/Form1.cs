@@ -22,6 +22,7 @@ namespace TemplateTPIntegrador
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             ValidacionesYUtiles validaciones = new ValidacionesYUtiles();
 
             if (!validaciones.ValidarStringVacio(textBox1, textBox2))
@@ -38,9 +39,20 @@ namespace TemplateTPIntegrador
                     MessageBox.Show("Login fallido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+=======
+            ValidacionesUtils validacionesUtils = new ValidacionesUtils();
+
+            string usuario = textUsername.Text;
+
+            validacionesUtils.ValidarStringVacio(usuario);    
+
+            LoginNegocio ln = new LoginNegocio();
+            ln.Login();
+
+>>>>>>> 29e51dd603d0caacadf1a713db7f24c09547a64e
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void textUsername_TextChanged(object sender, EventArgs e)
         {
 
         }
