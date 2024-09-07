@@ -5,7 +5,11 @@
 # Descripción de Cambios
 
 ### Integrantes
+
 - Micaela Schatz 
+- Florencia Menendez
+- Julian Diaz
+
 
 ## Resumen del Proyecto
 
@@ -62,5 +66,4 @@ TP-CAI-2024-2-G7/
 | --- | --- | --- | --- |
 | 0.0.1 | 2024-09-06 | N/A | Initial setup of project structure with frontend, data access, business logic, and persistence layers. Added basic authentication and validation. |
 
----
 
