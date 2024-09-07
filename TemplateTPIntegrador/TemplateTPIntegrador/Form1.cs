@@ -1,15 +1,8 @@
-﻿//using Negocio;
-using NEGOCIO.UTILS;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
-using TemplateTPIntegrador.UTILS;
+using TemplateTPIntegrador.UTILS; // Verifica que este namespace sea correcto
+using DATOS; // Verifica que este namespace sea correcto
+using NEGOCIO;
 
 namespace TemplateTPIntegrador
 {
@@ -22,13 +15,12 @@ namespace TemplateTPIntegrador
 
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             ValidacionesYUtiles validaciones = new ValidacionesYUtiles();
 
-            if (!validaciones.ValidarStringVacio(textBox1, textBox2))
+            if (!validaciones.ValidarStringVacio(textUsername, textPassword)) // Verifica que los nombres de los controles sean correctos
             {
                 LoginNegocio loginNegocio = new LoginNegocio();
-                bool resultado = loginNegocio.ValidarLogin(textBox1.Text, textBox2.Text);
+                bool resultado = loginNegocio.ValidarLogin(textUsername.Text, textPassword.Text);
 
                 if (resultado)
                 {
@@ -39,22 +31,11 @@ namespace TemplateTPIntegrador
                     MessageBox.Show("Login fallido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-=======
-            ValidacionesUtils validacionesUtils = new ValidacionesUtils();
-
-            string usuario = textUsername.Text;
-
-            validacionesUtils.ValidarStringVacio(usuario);    
-
-            LoginNegocio ln = new LoginNegocio();
-            ln.Login();
-
->>>>>>> 29e51dd603d0caacadf1a713db7f24c09547a64e
         }
 
         private void textUsername_TextChanged(object sender, EventArgs e)
         {
-
+            // Lógica para cuando el texto cambia en textUsername, si es necesario
         }
     }
 }
