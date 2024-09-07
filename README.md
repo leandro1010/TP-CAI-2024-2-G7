@@ -5,8 +5,11 @@
 # Descripción de Cambios
 
 ### Integrantes
+
+- Micaela Schatz 
 - Florencia Menendez
 - Julian Diaz
+
 
 ## Resumen del Proyecto
 
