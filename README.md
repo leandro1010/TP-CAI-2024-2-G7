@@ -1,8 +1,10 @@
-Claro, aquí tienes una descripción detallada en castellano para documentar los cambios realizados:
 
 ---
 
 # Descripción de Cambios
+
+### Integrantes
+- Florencia Menendez
 
 ## Resumen del Proyecto
 
@@ -60,5 +62,3 @@ TP-CAI-2024-2-G7/
 | 0.0.1 | 2024-09-06 | N/A | Initial setup of project structure with frontend, data access, business logic, and persistence layers. Added basic authentication and validation. |
 
 ---
-
-Esta descripción te proporciona una visión clara de los cambios realizados, la estructura de los archivos y la funcionalidad implementada. Así podrás consultar fácilmente la documentación sin tener que revisar el chat.
