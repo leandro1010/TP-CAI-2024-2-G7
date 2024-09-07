@@ -1,8 +1,11 @@
-Claro, aquí tienes una descripción detallada en castellano para documentar los cambios realizados:
+
 
 ---
 
 # Descripción de Cambios
+
+### Integrantes
+- Julian Diaz
 
 ## Resumen del Proyecto
 
@@ -61,4 +64,3 @@ TP-CAI-2024-2-G7/
 
 ---
 
-Esta descripción te proporciona una visión clara de los cambios realizados, la estructura de los archivos y la funcionalidad implementada. Así podrás consultar fácilmente la documentación sin tener que revisar el chat.
