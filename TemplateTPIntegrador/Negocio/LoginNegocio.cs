@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DATOS;
 
-namespace Negocio
+namespace NEGOCIO
 {
     public class LoginNegocio
     {
-        public void Login(string username, string password) 
+        public bool ValidarLogin(string usuario, string password)
         {
-            //aca escribo que hace el login
+            LoginDatos loginDatos = new LoginDatos();
+            return loginDatos.ExisteUsuario(usuario, password);
         }
     }
 }
