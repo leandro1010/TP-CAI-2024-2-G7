@@ -5,7 +5,7 @@
 # Descripción de Cambios
 
 ### Integrantes
-- Micaela Schatz
+- Micaela Schatz 
 
 ## Resumen del Proyecto
 
