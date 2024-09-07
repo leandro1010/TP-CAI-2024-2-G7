@@ -4,6 +4,13 @@
 
 # Descripción de Cambios
 
+### Integrantes
+
+- Micaela Schatz 
+- Florencia Menendez
+- Julian Diaz
+
+
 ## Resumen del Proyecto
 
 Se ha configurado la estructura básica del proyecto `TP-CAI-2024-2-G7`, el cual está dividido en cuatro capas: `TEMPLATETPINTEGRADOR`, `DATOS`, `NEGOCIO` y `PERSISTENCIA`. El objetivo principal es implementar un sistema de autenticación básico con una validación de usuario y contraseña.
@@ -59,6 +66,4 @@ TP-CAI-2024-2-G7/
 | --- | --- | --- | --- |
 | 0.0.1 | 2024-09-06 | N/A | Initial setup of project structure with frontend, data access, business logic, and persistence layers. Added basic authentication and validation. |
 
----
 
-Esta descripción te proporciona una visión clara de los cambios realizados, la estructura de los archivos y la funcionalidad implementada. Así podrás consultar fácilmente la documentación sin tener que revisar el chat.
