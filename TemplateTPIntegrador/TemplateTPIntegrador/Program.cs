@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace PRESENTACION
+namespace TemplateTPIntegrador
 {
-    internal static class Program
+    static class Program
     {
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_login()); // Asegúrate de que esté referenciado el formulario correcto
+            Application.Run(new frm_login()); // Asegúrate de que 'frm_login' esté en el espacio de nombres correcto
         }
     }
 }
