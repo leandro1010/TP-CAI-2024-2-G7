@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace TemplateTPIntegrador.UTILS
+namespace PRESENTACION
 {
     public class ValidacionesYUtiles
     {
