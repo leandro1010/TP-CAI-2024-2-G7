@@ -3,7 +3,7 @@
 
 ## Overview
 
-The TP CAI project is a software application designed for user management with an authentication system. The application is structured into four distinct layers: **TemplateTPIntegrador** (Frontend), **DATOS** (Data Access Layer), **NEGOCIO** (Business Logic Layer), and **PERSISTENCIA** (Persistence Layer). This setup allows for clear separation of concerns and modular development, ensuring scalability and maintainability.
+The TP CAI project is a software application designed for user management with an authentication system. The application is structured into four distinct layers: **PRESENTACION** (Frontend), **DATOS** (Data Access Layer), **NEGOCIO** (Business Logic Layer), and **PERSISTENCIA** (Persistence Layer). This setup allows for clear separation of concerns and modular development, ensuring scalability and maintainability.
 
 ## Current Version
 
@@ -11,7 +11,7 @@ The TP CAI project is a software application designed for user management with a
 
 ## Resources Created
 
-- **TemplateTPIntegrador (Frontend)**: 
+- **PRESENTACION (Frontend)**: 
   - Implements the user interface using Windows Forms.
   - Contains the login form and validation logic.
 

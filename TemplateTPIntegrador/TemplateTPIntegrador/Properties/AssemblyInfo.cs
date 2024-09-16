@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("TemplateTPIntegrador")]
+[assembly: AssemblyTitle("PRESENTACION")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Banco Provincia de Buenos Aires")]
-[assembly: AssemblyProduct("TemplateTPIntegrador")]
+[assembly: AssemblyProduct("PRESENTACION")]
 [assembly: AssemblyCopyright("Copyright © Banco Provincia de Buenos Aires 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

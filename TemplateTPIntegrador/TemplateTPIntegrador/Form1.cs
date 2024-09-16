@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Windows.Forms;
-using TemplateTPIntegrador.UTILS; // Verifica que este namespace sea correcto
-using DATOS; // Verifica que este namespace sea correcto
+using PRESENTACION; 
 using NEGOCIO;
 
-namespace TemplateTPIntegrador
+namespace PRESENTACION
 {
-    public partial class Form1 : Form
+    public partial class frm_inicio : Form
     {
-        public Form1()
+        public frm_inicio()
         {
             InitializeComponent();
         }
@@ -17,10 +16,10 @@ namespace TemplateTPIntegrador
         {
             ValidacionesYUtiles validaciones = new ValidacionesYUtiles();
 
-            if (!validaciones.ValidarStringVacio(textUsername, textPassword)) // Verifica que los nombres de los controles sean correctos
+            if (!validaciones.ValidarStringVacio(txt_username, txt_password)) // Verifica que los nombres de los controles sean correctos
             {
                 LoginNegocio loginNegocio = new LoginNegocio();
-                bool resultado = loginNegocio.ValidarLogin(textUsername.Text, textPassword.Text);
+                bool resultado = loginNegocio.ValidarLogin(txt_username.Text, txt_password.Text);
 
                 if (resultado)
                 {
@@ -36,6 +35,11 @@ namespace TemplateTPIntegrador
         private void textUsername_TextChanged(object sender, EventArgs e)
         {
             // Lógica para cuando el texto cambia en textUsername, si es necesario
+        }
+
+        private void frm_inicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
