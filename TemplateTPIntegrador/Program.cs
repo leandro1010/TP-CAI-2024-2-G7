@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TemplateTPIntegrador
+namespace Presentacion
 {
     internal static class Program
     {
@@ -16,7 +13,20 @@ namespace TemplateTPIntegrador
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Instanciar y mostrar el formulario de inicio de sesión
+            InterfazLogIn loginForm = new InterfazLogIn();
+
+            if (loginForm.ShowDialog() == DialogResult.OK)
+            {
+                // Si el inicio de sesión es exitoso, iniciar la aplicación principal
+                Application.Run(new Presentacion.InterfazMenu()); // Agregado el espacio de nombres completo del formulario personalizado
+            }
+            else
+            {
+                // Si el inicio de sesión falla (por ejemplo, si se cierra el formulario de inicio de sesión), salir de la aplicación
+                Application.Exit();
+            }
         }
     }
 }
