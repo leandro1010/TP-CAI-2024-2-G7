@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5A92E83-C29C-4897-A7C8-608FA6F5575D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InterfazListaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfazListaUsuarios.Designer.cs">
+      <DependentUpon>InterfazListaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana.Designer.cs">
+      <DependentUpon>Ventana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfazMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfazMenu.Designer.cs">
+      <DependentUpon>InterfazMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfazLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfazLogIn.Designer.cs">
+      <DependentUpon>InterfazLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfazAltaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfazAltaUsuarios.Designer.cs">
+      <DependentUpon>InterfazAltaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InterfazListaUsuarios.resx">
+      <DependentUpon>InterfazListaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana.resx">
+      <DependentUpon>Ventana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfazLogIn.resx">
+      <DependentUpon>InterfazLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfazMenu.resx">
+      <DependentUpon>InterfazMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfazAltaUsuarios.resx">
+      <DependentUpon>InterfazAltaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAdmin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PassView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Productos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElectroHogarLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoelectrohogar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar Programa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar Sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lista Usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menú Inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Datos\Datos.csproj">
+      <Project>{f8d43c45-c075-4da7-97a7-401b6aa05e2a}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="Negocio\Negocio.csproj">
+      <Project>{9007bbfb-cb3a-4634-abee-91e04e9a0bbb}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lupa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grupo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\343491.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarVenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevolverVenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoelectrohogar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerContraseña.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarVentana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonMinimizar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
