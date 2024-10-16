@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("TemplateTPIntegrador")]
+[assembly: AssemblyTitle("Form_Equipo1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Banco Provincia de Buenos Aires")]
-[assembly: AssemblyProduct("TemplateTPIntegrador")]
-[assembly: AssemblyCopyright("Copyright © Banco Provincia de Buenos Aires 2024")]
+[assembly: AssemblyCompany("GCABA")]
+[assembly: AssemblyProduct("Form_Equipo1")]
+[assembly: AssemblyCopyright("Copyright © GCABA 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("fbb76ce5-28cb-4176-942f-9773f50ff7a8")]
+[assembly: Guid("f5a92e83-c29c-4897-a7c8-608fa6f5575d")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

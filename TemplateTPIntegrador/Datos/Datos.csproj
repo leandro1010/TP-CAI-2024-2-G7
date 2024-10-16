@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E0D8FE3-7EAA-45B0-A363-D14D2CB1FCE9}</ProjectGuid>
+    <ProjectGuid>{F8D43C45-C075-4DA7-97A7-401B6AA05E2A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Datos</RootNamespace>
@@ -41,9 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UTILS\LoginDatos.cs" />
+   
+    <Compile Include="AltaUsuario.cs" />
+    
+    <Compile Include="BajaUsuario.cs" />
+    <Compile Include="CambiarContraseña.cs" />
+   
+    <Compile Include="LogIn.cs" />
+
+
+    <Compile Include="UsuariosActivos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
