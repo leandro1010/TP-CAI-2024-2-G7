@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Persistencia")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Banco Provincia de Buenos Aires")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Persistencia")]
-[assembly: AssemblyCopyright("Copyright © Banco Provincia de Buenos Aires 2024")]
+[assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("d70d39da-312d-45da-a378-fd222ec9672f")]
+[assembly: Guid("ac403d4a-c5ef-4fc2-b087-6d853ce04dc4")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
