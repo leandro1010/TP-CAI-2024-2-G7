@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C45177FE-6854-49E9-AA70-13FD2CDE1F69}</ProjectGuid>
+    <ProjectGuid>{9007BBFB-CB3A-4634-ABEE-91E04E9A0BBB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Negocio</RootNamespace>
@@ -51,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.csproj">
-      <Project>{6e0d8fe3-7eaa-45b0-a363-d14d2cb1fce9}</Project>
+      <Project>{f8d43c45-c075-4da7-97a7-401b6aa05e2a}</Project>
       <Name>Datos</Name>
     </ProjectReference>
     <ProjectReference Include="..\Persistencia\Persistencia.csproj">
-      <Project>{d70d39da-312d-45da-a378-fd222ec9672f}</Project>
+      <Project>{ac403d4a-c5ef-4fc2-b087-6d853ce04dc4}</Project>
       <Name>Persistencia</Name>
     </ProjectReference>
   </ItemGroup>

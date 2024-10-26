@@ -1,10 +1,10 @@
 # TP CAI
 
-## Descripción General
+## DescripciÃ³n General
 
-El proyecto TP CAI es una aplicación de software diseñada para la gestión de usuarios con un sistema de autenticación. La aplicación está estructurada en cuatro capas distintas: **PRESENTACION** (Frontend), **DATOS** (Capa de Acceso a Datos), **NEGOCIO** (Capa de Lógica de Negocios) y **PERSISTENCIA** (Capa de Persistencia). Esta estructura permite una clara separación de responsabilidades y un desarrollo modular, asegurando escalabilidad y mantenibilidad.
+El proyecto TP CAI es una aplicaciÃ³n de software diseÃ±ada para la gestiÃ³n de usuarios con un sistema de autenticaciÃ³n. La aplicaciÃ³n estÃ¡ estructurada en cuatro capas distintas: **PRESENTACION** (Frontend), **DATOS** (Capa de Acceso a Datos), **NEGOCIO** (Capa de LÃ³gica de Negocios) y **PERSISTENCIA** (Capa de Persistencia). Esta estructura permite una clara separaciÃ³n de responsabilidades y un desarrollo modular, asegurando escalabilidad y mantenibilidad.
 
-## Versión Actual
+## VersiÃ³n Actual
 
 0.0.2
 
@@ -12,30 +12,30 @@ El proyecto TP CAI es una aplicación de software diseñada para la gestión de usu
 
 - **PRESENTACION (Frontend)**: 
   - Implementa la interfaz de usuario utilizando Windows Forms.
-  - Contiene el formulario de inicio de sesión y la lógica de validación.
+  - Contiene el formulario de inicio de sesiÃ³n y la lÃ³gica de validaciÃ³n.
   - **Clases**: 
-    - `frm_login.cs`: Formulario de inicio de sesión con componentes de interfaz de usuario y lógica de autenticación.
-    - `frm_login.Designer.cs`: Contiene el código autogenerado para el diseño del formulario `frm_login`.
+    - `frm_login.cs`: Formulario de inicio de sesiÃ³n con componentes de interfaz de usuario y lÃ³gica de autenticaciÃ³n.
+    - `frm_login.Designer.cs`: Contiene el cÃ³digo autogenerado para el diseÃ±o del formulario `frm_login`.
 
 - **DATOS (Capa de Acceso a Datos)**:
-  - Implementa el acceso a datos para la información del usuario.
+  - Implementa el acceso a datos para la informaciÃ³n del usuario.
   - **Clases**: 
-    - `LoginDatos.cs`: Contiene métodos para el acceso a datos del usuario y la verificación.
+    - `LoginDatos.cs`: Contiene mÃ©todos para el acceso a datos del usuario y la verificaciÃ³n.
 
-- **NEGOCIO (Capa de Lógica de Negocios)**:
-  - Maneja la lógica de negocios relacionada con la autenticación de usuarios y la gestión de contraseñas.
+- **NEGOCIO (Capa de LÃ³gica de Negocios)**:
+  - Maneja la lÃ³gica de negocios relacionada con la autenticaciÃ³n de usuarios y la gestiÃ³n de contraseÃ±as.
   - **Clases**:
-    - `LoginNegocio.cs`: Maneja la lógica de autenticación y llama a `LoginDatos` para la verificación de usuarios.
-    - `ValidacionesUtils.cs`: Contiene métodos de validación para contraseñas, incluyendo las nuevas reglas de negocio.
-    - `PasswordValidator.cs`: Maneja las reglas de validación de contraseñas como longitud mínima, requisitos de caracteres y expiración.
+    - `LoginNegocio.cs`: Maneja la lÃ³gica de autenticaciÃ³n y llama a `LoginDatos` para la verificaciÃ³n de usuarios.
+    - `ValidacionesUtils.cs`: Contiene mÃ©todos de validaciÃ³n para contraseÃ±as, incluyendo las nuevas reglas de negocio.
+    - `PasswordValidator.cs`: Maneja las reglas de validaciÃ³n de contraseÃ±as como longitud mÃ­nima, requisitos de caracteres y expiraciÃ³n.
 
 - **PERSISTENCIA (Capa de Persistencia)**:
-  - (Aún no detallado; típicamente contiene la lógica de almacenamiento y recuperación de datos).
+  - (AÃºn no detallado; tÃ­picamente contiene la lÃ³gica de almacenamiento y recuperaciÃ³n de datos).
 
 ## Historial de Cambios
 
 {{< table id="changelog" class="bordered" data-sample=10 >}}
-| Versión | Fecha (Año-MM-DD) | ID de Error Relacionado | Resumen del Cambio |
+| VersiÃ³n | Fecha (AÃ±o-MM-DD) | ID de Error Relacionado | Resumen del Cambio |
 |---------|--------------------|-------------------------|---------------------|
-| 0.0.1   | 2024-09-06         | N/A                     | Lanzamiento inicial del proyecto con funcionalidad básica para la autenticación de usuarios. |
-| 0.0.2   | 2024-09-15         | N/A                     | Se añadieron reglas de negocio para la gestión de contraseñas: las contraseñas deben contener al menos una letra mayúscula y un número, y deben expirar cada 30 días sin reutilización de contraseñas anteriores. Se añadieron nuevas clases para la validación de contraseñas. |
+| 0.0.1   | 2024-09-06         | N/A                     | Lanzamiento inicial del proyecto con funcionalidad bÃ¡sica para la autenticaciÃ³n de usuarios. |
+| 0.0.2   | 2024-09-15         | N/A                     | Se aÃ±adieron reglas de negocio para la gestiÃ³n de contraseÃ±as: las contraseÃ±as deben contener al menos una letra mayÃºscula y un nÃºmero, y deben expirar cada 30 dÃ­as sin reutilizaciÃ³n de contraseÃ±as anteriores. Se aÃ±adieron nuevas clases para la validaciÃ³n de contraseÃ±as. |
